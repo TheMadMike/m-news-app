@@ -13,7 +13,7 @@ const Footer = () => {
                 })}
             </div>
             <div className="px-6 my-auto">
-                Copyright &copy; 2021 Michał Gibas. All rights reserved.
+                Copyright &copy; 2021 Michał Gibas.
             </div>
         </footer>
     );
