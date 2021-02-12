@@ -1,3 +1,4 @@
+import Loader from './components/Loader';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Article from './components/Article';
@@ -7,10 +8,12 @@ import Api from './Api';
 
 const App = () => {
   const [articles, setArticles] = useState([]);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     Api.getTopHeadlines({ language: 'en' }).then((data) => {
       setArticles(data.articles);
+      setLoaded(true);
     });
   }, []);
 
@@ -19,9 +22,11 @@ const App = () => {
       <Header/>
       <main className="min-h-screen">
         { 
-          articles.map((data, key) => {
-            return <Article data={data} key={key} />;
-          })
+          loaded ?
+            articles.map((data, key) => {
+              return <Article data={data} key={key} />;
+            })
+          : <Loader />
         }
       </main>
       <Footer/>
