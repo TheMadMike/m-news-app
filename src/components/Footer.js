@@ -1,5 +1,5 @@
 const footerLinks = [
-    {href: '#', text: 'GitHub repository'},
+    {href: 'https://github.com/TheMadMike/m-news-app', text: 'GitHub repository'},
     {href: 'https://newsapi.org/', text: 'News API'},
     {href: 'http://mgibas.me/', text: 'Developer'},
 ];
