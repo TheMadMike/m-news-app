@@ -19,6 +19,8 @@ const constructUri = (base, query) => {
         }
     }
     
+    uri = uri.substring(0, uri.length-1);
+
     return uri;
 };
 
