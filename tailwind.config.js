@@ -7,6 +7,7 @@ module.exports = {
     colors: {
       gray: colors.coolGray,
       indigo: colors.indigo,
+      red: colors.red,
     },
     fontFamily: {
       'header': ['Playfair Display', 'serif'],
