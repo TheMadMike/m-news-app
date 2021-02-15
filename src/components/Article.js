@@ -10,7 +10,9 @@ const Article = ({data}) => {
                 {img}
             </div>
             <div className="w-full px-0.5 md:px-2 text-justify">
-                <h2 className="border-b border-gray-300 text-sm md:text-xl text-gray-900 font-semibold"> {data.title} </h2>
+                <h2 className="border-b border-gray-300 text-sm md:text-2xl text-gray-900 font-semibold"> 
+                    {data.title} 
+                </h2>
                 <p className="block text-xs md:text-sm text-gray-400"> 
                     {data.publishedAt + ' - ' + data.source.name}
                 </p>
