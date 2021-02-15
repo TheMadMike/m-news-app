@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+axios.defaults.baseURL = 'https://napi-proxy.herokuapp.com/';
+
 const makeGetRequest = async (uri) => {
     try {
         const response = await axios.get(uri);
