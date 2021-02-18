@@ -2,8 +2,7 @@
 
 Easily browse latest news!
 
-The project is currently in development phase.
-It isn't hosted anywhere (yet).
+Visit at: https://mnews.netlify.app/
 
 # 🚀 Building and running locally (Node.js >= 14)
 
